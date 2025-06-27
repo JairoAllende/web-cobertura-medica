@@ -1,6 +1,178 @@
-#home-foto_perfil{
+html, body{
+    width: 100%;
+    height: 100dvh;
+    display: flex;
+    flex-direction: column;
+}
+
+header{
+    background-color: var(--color-principal);
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 0;
+    color: var(--color-surface);
+}
+
+#marca{
+    display: flex;
+    align-items: center;
+    margin-left: 1rem;
+}
+
+#logo-marca{
     width: 5rem;
-    height: 5rem;
+    cursor: pointer;
+}
+
+h1{
+    cursor: pointer;
+}
+
+#mi-perfil{
+    margin-right: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+#mi-perfil-usuario{
+    display: flex;
+    gap: 0.2rem;
+}
+
+#numero-emergencia{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    background-color: red;
+    color: var(--color-surface);
+    padding: 0.5rem;
+    margin-bottom: 2rem;
+}
+
+main{
+    display: grid;
+    grid-template-columns: 30% auto;
+    flex: 1;
+}
+
+#home-usuario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+#container-home-foto_perfil{
+    position: relative;
+}
+
+#home-foto_perfil{
+    width: 15rem;
+    height: 15rem;
     border-radius: 50%;
+    border: 5px solid var(--color-secundario);
     object-fit: cover;  
+}
+
+.boton-agregar {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 4rem;
+  height: 4rem;
+  background-color: #007bff;
+  color: white;
+  border-radius: 50%;
+  font-weight: 500;
+  font-size: 4rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  box-shadow: 0 0 4px rgba(0,0,0,0.3);
+}
+
+#home-usuario-info{
+    text-align: center;
+}
+
+#home{
+    display: grid;
+    grid-template-rows: 81% auto;
+}
+
+#home-cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+}
+
+.home-card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 2rem;
+    height: 80%;
+    color: var(--color-principal);
+    border: 1px solid var(--color-secundario);
+    box-shadow: 3px 3px 10px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.home-card:hover{
+    background-color: var(--color-secundario);
+}
+
+#home-grupo_familiar{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    margin-right: 2rem;
+    gap: 0.5rem;
+    background-color: var(--color-secundario);
+    color: var(--color-surface);
+    height: 85%;
+}
+
+#home-grupo_familiar h2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    background-color: var(--color-principal);
+    width: 100%;
+    height: 100%;
+}
+
+#home-grupo_familiar h3{
+    font-size: 1rem;
+}
+
+#home-grupo_familiar-foto{
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    border: 2px solid var(--color-principal);
+    object-fit: cover;
+}
+
+footer{
+    color: var(--color-surface);
+    display: flex;
+    align-items: center;
+    background-color: var(--color-principal);
+    font-size: 0.8rem;
+    padding-left: 1rem;
+}
+
+.logos-redes{
+    width: 4rem;
+    height: 4rem;
+    cursor: pointer;
 }
