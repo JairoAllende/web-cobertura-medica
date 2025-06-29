@@ -6,6 +6,12 @@ html, body{
     
 }
 
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100dvh;
+}
+
 header{
     display: flex;
     justify-content: space-between;
@@ -60,25 +66,34 @@ h1{
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
     font-size: 1.5rem;
     background-color: red;
     color: var(--color-surface);
     padding: 0.5rem;
 }
 
-main{
-    flex:1;
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 #container-titulo-plan{
-    background-color: var(--color-principal);
-    height: 15%;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    background-color: var(--color-principal);
+    height: 20%;
     color: var(--color-surface);
-    flex-direction: column;
     gap: 0.2rem;
+}
+
+#plan{
+    display: flex;
+    align-items: center;
+    padding: 1rem;
     font-size: 1.8rem;
 }
 
@@ -87,16 +102,20 @@ main{
     font-size: 3rem;
 }
 
-#container-prestaciones-presentacion{
-    display: grid;
-    grid-template-columns: 80% auto;
-    
+#presentacion{
+    width: 30%;
+    padding: 1rem;
 }
 
-#prestaciones{
+#container-prestaciones{
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: stretch;
+    grid-template-columns: 1fr;
+    border: 1px solid var(--color-principal);
+    width: 60%;
+    margin: 5rem auto;
+    background-color: var(--color-secundario);
+    color: var(--color-principal);
+    border-radius: 20px;
 }
 
 .cobertura{
@@ -111,16 +130,12 @@ main{
     justify-content: space-between;
 }
 
-#presentacion{
-    margin-top: 1rem;
-    margin-right: 1rem;
-}
 
 footer{
     display: flex;
     flex-direction: column;
+    margin-top: 0;
     background-color: var(--color-principal);
-    margin-top: 2rem;
     color: var(--color-surface);
 }
 

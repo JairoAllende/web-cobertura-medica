@@ -13,41 +13,47 @@
 </head>
 <body>
     
-    <header>
-        <div id="marca">
-            <img src="/assets/imagenes/logo-salud_oeste.png" alt="logo" id="logo-marca">
-            <h1>Salud Oeste</h1>
-        </div>
+    <div class="wrapper">
+        <header>
+            <div id="marca">
+                <img src="/assets/imagenes/logo-salud_oeste.png" alt="logo" id="logo-marca">
+                <h1>Salud Oeste</h1>
+            </div>
+            
+            <div id="containter-opciones">
+                <div class="opciones">
+                    <span class="material-symbols-outlined">call_log</span>
+                    <p>Canales de atencion</p>
+                </div>
+                <div class="opciones">
+                    <span class="material-symbols-outlined" style="font-size: 1.8rem;">list_alt</span>
+                    <p>Cartilla</p>
+                </div>
+                <div class="opciones" id="opciones-iniciar_sesion">
+                    <span class="material-symbols-outlined">account_circle</span>
+                    <p>Iniciar sesión</p>
+                </div>
+            </div>
+        </header>
         
-        <div id="containter-opciones">
-            <div class="opciones">
-                <span class="material-symbols-outlined">call_log</span>
-                <p>Canales de atencion</p>
+        <section id="numero-emergencia">
+            <span class="material-symbols-outlined" style="font-size: 1.8rem;">call</span>
+            <p>Emergencias: 0800-888-888</p>
+        </section>
+        
+        <main>
+            <div id="container-titulo-plan">
+                <div id="plan">
+                    <h2>Plan Silver</h2>
+                    <span class="material-symbols-outlined" id="medalla">license</span>
+                </div>
+                
+                <div id="presentacion">
+                    El Plan Silver ofrece una cobertura integral con acceso a una amplia red de prestadores médicos en todo el país. Es ideal para quienes buscan equilibrio entre atención de calidad y un precio accesible. Incluye estudios, consultas y prácticas esenciales, garantizando una atención médica confiable en todo momento.
+                </div>
             </div>
-            <div class="opciones">
-                <span class="material-symbols-outlined" style="font-size: 1.8rem;">list_alt</span>
-                <p>Cartilla</p>
-            </div>
-            <div class="opciones" id="opciones-iniciar_sesion">
-                <span class="material-symbols-outlined">account_circle</span>
-                <p>Iniciar sesión</p>
-            </div>
-        </div>
-    </header>
-
-    <section id="numero-emergencia">
-        <span class="material-symbols-outlined" style="font-size: 1.8rem;">call</span>
-        <p>Emergencias: 0800-888-888</p>
-    </section>
-
-    <main>
-        <div id="container-titulo-plan">
-            <h2>Plan Silver</h2>
-            <span class="material-symbols-outlined" id="medalla">license</span>
-        </div>
-
-        <section id="container-prestaciones-presentacion">
-            <div id="prestaciones">
+            
+            <section id="container-prestaciones">
                 
                 <div class="cobertura">
                     <h3>COBERTURA AMBULATORIA</h3>
@@ -62,6 +68,7 @@
                             <p>SC/CT/CL</p>
                         </div>
                     </div>
+                    
                     <div>
                         <h4>Estudios y prácticas de diagnóstico y tratamiento</h4>
                         <div class="prestaciones-items">
@@ -80,6 +87,7 @@
                             <p>* Alta complejidad</p>
                         </div>
                     </div>
+                    
                     <div>
                         <h4>Rehabilitacion</h4>
                         <div class="prestaciones-items">
@@ -91,6 +99,7 @@
                             <p>SC</p>
                         </div>
                     </div>
+                    
                     <div>
                         <h4>Salud Mental</h4>
                         <div class="prestaciones-items">
@@ -98,6 +107,7 @@
                             <p>CC</p>
                         </div>
                     </div>
+                    
                     <div>
                         <h3>Cobertura en Internacion</h3>
                         <h4>Clínicas y quirúrgicas en general</h4>
@@ -134,6 +144,7 @@
                             <p>100%</p>
                         </div>
                     </div>
+                    
                     <div>
                         <h4>Alta complejidad</h4>
                         <div class="prestaciones-items">
@@ -153,8 +164,9 @@
                             <p>100%</p>
                         </div>
                     </div>
-                    <!-- <div>
-                        <h4>Psiquiatricas</h4>
+                    
+                    <div>
+                        <h4>Psiquiatricás</h4>
                         <div class="prestaciones-items">
                             <p>* Internación especializada (hasta 30 días por año calendario)</p>
                             <p>SC</p>
@@ -162,83 +174,139 @@
                         <div class="prestaciones-items">
                             <p>* Interconsultas / gabinete especializado</p>
                             <p>SC/ST/SL</p>
-                    </div> -->
-                </div>
+                        </div>
+                    </div>
 
-                <div class="cobertura">
-                    <h3>Medicamentos</h3>
                     <div>
-                        <p>* Farmacias con receta médica 40% directo en farmacias adheridas</p>
-                        <p>* Oncológicos 100% (según legislación vigente)</p>
-                        <p>* Medicación patologías crónicas 70% / 100% (según legislación vigente)</p>
+                        <h3>Medicamentos</h3>
+                        <div class="prestaciones-items">
+                            <p>* Farmacias con receta médica 40% directo en farmacias adheridas</p>
+                        </div>
+                        <div class="prestaciones-items">
+                            <p>* Oncológicos 100% (según legislación vigente)</p>
+                        </div>
+                        <div class="prestaciones-items">
+                            <p>* Medicación patologías crónicas 70% / 100% (según legislación vigente)</p>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h3>Odontologia</h3>
+                        <div class="prestaciones-items">
+                            <p>* Consultas y odontología general (abona material descartable)</p>
+                            <p>SC/ST/SL</p>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h3>Opticas y Ortopedias</h3>
+                        <div class="prestaciones-items">
+                            <p>* Descuentos especiales</p>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h3>Protesís</h3>
+                        <div class="prestaciones-items">
+                            <p>* Nacionales 100% provisión por parte de Vita's</p>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h3>Plan Materno Infantil</h3>
+                        <div class="prestaciones-items">
+                            <p>* Según condiciones vigentes PMO/PMI</p>
+                            <p>SC/SC/ST</p>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h3>Servicios de Ambulancia y Translado</h3>
+                        <div class="prestaciones-items">
+                            <p>* Emergencias</p>
+                            <p>SC/SC/ST</p>
+                        </div>
+                        <div class="prestaciones-items">
+                            <p>* Urgencia y Médico a Domicilio</p>
+                            <p>CC/ST/SL</p>
+                        </div>
+                        <div class="prestaciones-items">
+                            <p>* Traslados programados (según prescripción médica)</p>
+                            <p>SC/ST/SL</p>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h3>Asistencia al viajero</h3>
+                        <div class="prestaciones-items">
+                            <p>* Nacional y países limítrofes (según condiciones vigentes)</p>
+                            <p>Opcional</p>
+                        </div>
                     </div>
                 </div>
                 
+            </section>
+        </main>
+        
+        <footer>
+            <div id="container-logos-alianzas">
+                <img src="/assets/imagenes/logo-unlam.png" alt="logo unlam" class="logo-alianza">
+                <img src="/assets/imagenes/logo-unlam.png" alt="logo unlam" class="logo-alianza">
+                <img src="/assets/imagenes/logo-unlam.png" alt="logo unlam" class="logo-alianza">
+                <img src="/assets/imagenes/logo-unlam.png" alt="logo unlam" class="logo-alianza">
             </div>
-
-            <div id="presentacion">
-                El Plan Silver ofrece una cobertura integral con acceso a una amplia red de prestadores médicos en todo el país. Es ideal para quienes buscan equilibrio entre atención de calidad y un precio accesible. Incluye estudios, consultas y prácticas esenciales, garantizando una atención médica confiable en todo momento.
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <div id="container-logos-alianzas">
-            <img src="/assets/imagenes/logo-unlam.png" alt="logo unlam" class="logo-alianza">
-            <img src="/assets/imagenes/logo-unlam.png" alt="logo unlam" class="logo-alianza">
-            <img src="/assets/imagenes/logo-unlam.png" alt="logo unlam" class="logo-alianza">
-            <img src="/assets/imagenes/logo-unlam.png" alt="logo unlam" class="logo-alianza">
-        </div>
-        <div id="footer-main">
-            <div id="container-logo-redes">
-                <a href="./index.html"><img src="/assets/imagenes/logo-salud_oeste.png" alt="logo" id="footer-logo-salud_oeste"></a>
-                <div id="footer-redes">
-                    <img src="/assets/imagenes/logo-facebook.png" alt="logo facebook">
-                    <img src="/assets/imagenes/logo-instagram.png" alt="">
-                    <img src="/assets/imagenes/logo-x.png" alt="">
-                </div>
-            </div>
-
-            <div id="container-enlaces">
-                <div class="enlaces">
-                    <h4>Otras páginas</h4>
-                    <a href="" class="a-enlace">Home</a>
-                    <a href="" class="a-enlace">Planes</a>
-                    <a href="" class="a-enlace">Registro</a>
-                </div>
-                <div class="enlaces">
-                    <h4>Otras páginas</h4>
-                    <a href="" class="a-enlace">Home</a>
-                    <a href="" class="a-enlace">Planes</a>
-                    <a href="" class="a-enlace">Registro</a>
-                </div>
-                <div class="enlaces">
-                    <h4>Otras páginas</h4>
-                    <a href="" class="a-enlace">Home</a>
-                    <a href="" class="a-enlace">Planes</a>
-                    <a href="" class="a-enlace">Registro</a>
-                </div>
-            </div>
-
-            <div id="container-nov">
-                <h4>Subscribite para recibir novedades</h4>
-
-                <form action="#" method="post">
-                    <div class="form-campo">
-                        <label for="nombre">Nombre:</label><br>
-                        <input type="text" id="nombre" name="nombre" required autocomplete="off" placeholder="Jose"><br><br>
+            <div id="footer-main">
+                <div id="container-logo-redes">
+                    <a href="./index.html"><img src="/assets/imagenes/logo-salud_oeste.png" alt="logo" id="footer-logo-salud_oeste"></a>
+                    <div id="footer-redes">
+                        <img src="/assets/imagenes/logo-facebook.png" alt="logo facebook">
+                        <img src="/assets/imagenes/logo-instagram.png" alt="">
+                        <img src="/assets/imagenes/logo-x.png" alt="">
                     </div>
-
-                    <div class="form-campo">
-                        <label for="correo">Correo electrónico:</label><br>
-                        <input type="email" id="correo" name="correo" required autocomplete="off" placeholder="joseperez@gmail.com"><br><br>
+                </div>
+                
+                <div id="container-enlaces">
+                    <div class="enlaces">
+                        <h4>Otras páginas</h4>
+                        <a href="" class="a-enlace">Home</a>
+                        <a href="" class="a-enlace">Planes</a>
+                        <a href="" class="a-enlace">Registro</a>
                     </div>
+                    <div class="enlaces">
+                        <h4>Otras páginas</h4>
+                        <a href="" class="a-enlace">Home</a>
+                        <a href="" class="a-enlace">Planes</a>
+                        <a href="" class="a-enlace">Registro</a>
+                    </div>
+                    <div class="enlaces">
+                        <h4>Otras páginas</h4>
+                        <a href="" class="a-enlace">Home</a>
+                        <a href="" class="a-enlace">Planes</a>
+                        <a href="" class="a-enlace">Registro</a>
+                    </div>
+                </div>
+                
+                <div id="container-nov">
+                    <h4>Subscribite para recibir novedades</h4>
                     
-                    <button type="submit">Enviar</button>
-                </form>
-
+                    <form action="#" method="post">
+                        <div class="form-campo">
+                            <label for="nombre">Nombre:</label><br>
+                            <input type="text" id="nombre" name="nombre" required autocomplete="off" placeholder="Jose"><br><br>
+                        </div>
+                        
+                        <div class="form-campo">
+                            <label for="correo">Correo electrónico:</label><br>
+                            <input type="email" id="correo" name="correo" required autocomplete="off" placeholder="joseperez@gmail.com"><br><br>
+                        </div>
+                        
+                        <button type="submit">Enviar</button>
+                    </form>
+                    
+                </div>
             </div>
-        </div>
-    </footer>
+        </footer>
+    </div>
+    
 </body>
 </html>
