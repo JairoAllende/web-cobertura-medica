@@ -125,7 +125,7 @@ footer{
 }
 
 .logo-alianza{
-    width: 3rem;
+    width: 5rem;
 }
 
 #container-logos-alianzas{
@@ -170,11 +170,24 @@ footer{
 .enlaces{
     display: flex;
     flex-direction: column;
+    gap: 0.5rem;
+    border-left: 1px solid var(--color-secundario);
+    height: 70%;
+    width: 20%;
+    padding:0 0.5rem;
+}
+
+.enlaces h4{
+    text-align: center;
 }
 
 .a-enlace{
     text-decoration: none;
     color: var(--color-surface);
+}
+
+.a-enlace:hover{
+   color: var(--color-secundario);
 }
 
 #container-nov{
@@ -187,6 +200,8 @@ footer{
     background-color: var(--color-secundario);
     margin: 1rem 1rem 1rem 0rem;
     gap: 1rem;
+    padding: 0.5rem;
+    color: var(--color-principal);
 }
 
 #container-nov form{
@@ -194,9 +209,27 @@ footer{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    text-align: left;
+}
+
+#container-nov input{
+    border-radius: 5px;
+    padding: 0.3rem;
+    border: 1px solid var(--color-principal);
 }
 
 #container-nov button{
+    color: var(--color-principal);
     width: 40%;
     padding: 0.3rem;
+    border-radius: 3px;
+    border: 1px solid var(--color-principal);
+    align-self: center;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+#container-nov button:hover{
+    background-color: var(--color-principal);
+    color: var(--color-surface);
 }

@@ -224,12 +224,16 @@
                 <h4>Subscribite para recibir novedades</h4>
 
                 <form action="#" method="post">
-                    <label for="nombre">Nombre:</label><br>
-                    <input type="text" id="nombre" name="nombre" required><br><br>
+                    <div class="form-campo">
+                        <label for="nombre">Nombre:</label><br>
+                        <input type="text" id="nombre" name="nombre" required autocomplete="off" placeholder="Jose"><br><br>
+                    </div>
 
-                    <label for="correo">Correo electrónico:</label><br>
-                    <input type="email" id="correo" name="correo" required><br><br>
-
+                    <div class="form-campo">
+                        <label for="correo">Correo electrónico:</label><br>
+                        <input type="email" id="correo" name="correo" required autocomplete="off" placeholder="joseperez@gmail.com"><br><br>
+                    </div>
+                    
                     <button type="submit">Enviar</button>
                 </form>
 
