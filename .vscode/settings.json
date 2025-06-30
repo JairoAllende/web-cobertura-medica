@@ -1,3 +1,4 @@
 {
-    "livePreview.defaultPreviewPath": "/prepaga/index.html"
+    "livePreview.defaultPreviewPath": "/prepaga/index.html",
+    "liveServer.settings.port": 5502
 }
