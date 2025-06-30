@@ -81,6 +81,73 @@ main {
 
 /* ----- */
 
+.container-informacion_principal{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 50dvh;
+}
+
+#container-mensaje_bienvenida{
+    padding: 2rem 0rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 0.5rem;
+    color: var(--color-principal);
+}
+
+#container-mensaje_bienvenida h2{
+    font-size: 2rem;
+}
+
+#container-mensaje_bienvenida p{
+    max-width: 35%;
+}
+
+#container-socios-empresas{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin: 1rem 0rem;
+}
+
+.socios-empresas{
+    background-color: bisque;
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-surface);
+    position: relative;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* negro con 50% de opacidad */
+  z-index: 1;
+}
+
+.socios-empresas h2{
+position: relative;
+  z-index: 2;
+}
+
+#container-socios{
+    background-image: url(/assets/imagenes/foto-socios.png);
+}
+
+#container-empresas{
+    background-image: url(/assets/imagenes/foto-empresa.jpg);
+    background-position: center;
+    background-size: cover;
+    
+}
+
 footer{
     display: flex;
     flex-direction: column;
