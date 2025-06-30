@@ -1,7 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
     console.log("El archivo script.js se ha cargado correctamente.");
 
-    // Elementos del DOM
     const paso2 = document.getElementById('paso2');
     const paso3 = document.getElementById('paso3');
     const form = document.getElementById('turno-form');
@@ -12,7 +11,6 @@ document.addEventListener('DOMContentLoaded', function() {
     const timeline2 = document.getElementById('timeline-2');
     const timeline3 = document.getElementById('timeline-3');
 
-    // Campos y mensajes de error
     const selectConsulta = document.getElementById('tipo-consulta');
     const errorConsulta = document.getElementById('error-consulta');
     
@@ -22,7 +20,6 @@ document.addEventListener('DOMContentLoaded', function() {
     const selectLocalidad = document.getElementById('localidad');
     const errorLocalidad = document.getElementById('error-localidad');
 
-    // --- Lógica para el botón Siguiente 1 ---
     btnSiguiente1.addEventListener('click', function() {
         if (selectConsulta.value === "") {
             errorConsulta.classList.remove('hidden');
@@ -37,7 +34,6 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-    // --- Lógica para el botón Siguiente 2 ---
     btnSiguiente2.addEventListener('click', function() {
         if (selectMunicipio.value === "") {
             errorMunicipio.classList.remove('hidden');
@@ -52,7 +48,6 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
     
-    // --- Ocultar mensaje de error al seleccionar una opción válida ---
     selectConsulta.addEventListener('change', function() {
         if (this.value !== "") {
             errorConsulta.classList.add('hidden');
@@ -74,7 +69,6 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-    // --- Lógica para el botón Buscar (envío final) ---
     form.addEventListener('submit', function(event) {
         event.preventDefault();
 
@@ -84,8 +78,6 @@ document.addEventListener('DOMContentLoaded', function() {
             return;
         }
         
-        // --- AQUÍ ESTÁ EL ÚNICO CAMBIO ---
-        // Ahora abre la página de turnos en la misma pestaña.
         window.open('turnos.html', '_self');
     });
 
