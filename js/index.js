@@ -8,6 +8,6 @@ botonIniciarSesion.addEventListener("click", () =>{
 
 Array.from(cardPlan).forEach(element => {
   element.addEventListener("click", () => {
-    window.location.href = "/html/plan_silver.html";
+    window.open("/html/plan_silver.html", "_blank")
   });
 });
