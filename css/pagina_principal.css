@@ -120,6 +120,12 @@ main {
     position: relative;
     box-shadow: 5px 5px 10px rgb(0, 0, 0);
     cursor: pointer;
+    transition: 0.5s;
+}
+
+.socios-empresas:hover .overlay{
+    opacity: 0;
+    transition: 0.5s;
 }
 
 .overlay {
@@ -148,7 +154,7 @@ main {
 }
 
 #container-empresas{
-    background-image: url(/assets/imagenes/foto-empresa.jpg);
+    background-image: url(/assets/imagenes/foto-empresas2.png);
     background-position: center;
     background-size: cover;
     
@@ -182,6 +188,12 @@ main {
     position: relative;
     border: none;
     cursor: pointer;
+    transition: 0.5s;
+}
+
+.card-plan:hover .overlay{
+    opacity: 0;
+    transition: 0.5s;
 }
 
 .uno{
@@ -237,6 +249,14 @@ footer{
     color: var(--color-surface);
 }
 
+.separacion-footer{
+    width: 80%;
+    margin: auto;
+    height: 10px;
+    background-color: var(--color-principal);
+    
+}
+
 .logo-alianza{
     width: 5rem;
 }
@@ -248,7 +268,6 @@ footer{
     justify-content: space-evenly;
     align-items: center;
     padding: 1rem;
-    background-color: rgba(0, 87, 146, 0.5);
 }
 
 #footer-main{
@@ -272,6 +291,10 @@ footer{
 #footer-redes{
     display: flex;
     flex-direction: column;
+}
+
+#footer-redes img{
+    cursor: pointer;
 }
 
 #container-enlaces{
