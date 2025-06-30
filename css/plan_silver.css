@@ -81,29 +81,47 @@ main {
 
 #container-titulo-plan{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     background-color: var(--color-principal);
     height: 20%;
     color: var(--color-surface);
-    gap: 0.2rem;
+    gap: 10rem;
+    padding: 3rem
+}
+
+#presentacion{
+    width: 20%;
 }
 
 #plan{
     display: flex;
+    flex-direction: column;
     align-items: center;
-    padding: 1rem;
+    justify-content: flex-start;
     font-size: 1.8rem;
+    text-align: center;
 }
 
 #medalla{
-    color: #C0C0C0;
-    font-size: 3rem;
+    width: 10rem;
 }
 
-#presentacion{
-    width: 25%;
-    padding: 1rem;
+#container-mas_informacion{
+    border: solid var(--color-secundario);
+    padding: 1.2rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#container-mas_informacion:hover{
+    background-color: var(--color-secundario);
+    color: var(--color-principal);
+}
+
+#container-mas_informacion a{
+    text-decoration: none;
+    color: var(--color-surface);
 }
 
 #container-prestaciones{
