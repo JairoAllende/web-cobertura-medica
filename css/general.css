@@ -6,8 +6,8 @@
 }
 
 :root {
-  --color-principal: #005792;
-  --color-secundario: #89CFF0;
+  --color-principal: rgb(0, 87, 146);
+  --color-secundario: rgb(138, 207, 240);
   --color-background: #ffffff;
   --color-surface: #f2f2f2;
   --color-success: #a8d5ba;
