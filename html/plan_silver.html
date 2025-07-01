@@ -54,7 +54,7 @@
                 </div>
 
                 <div id="container-mas_informacion">
-                    <a href="">Quiero más informacion acerca del plan</a>
+                    <a href="#form-informacion-plan">Quiero más informacion acerca del plan</a>
                 </div>
             </div>
             
@@ -252,6 +252,40 @@
                     </div>
                 </div>
                 
+            </section>
+
+            <section id="container-quiero_plan">
+                <div id="quiero_plan">
+                    <h2>Quiero el plan</h2>
+                </div>
+
+                <div id="form-informacion-plan">
+                    <form action="#" method="post" id="formulario">
+                        <h3>Consultanos por este plan</h3>
+                        <div>
+                            <label for="nombre">Nombre:</label><br>
+                            <input autocomplete="off" type="text" id="nombre" name="nombre" class="campo" required><br><br>
+                        </div>
+
+                        <div>
+                            <label for="email">Correo electrónico:</label><br>
+                            <input autocomplete="off"  type="email" id="email" name="email" class="campo" required><br><br>
+                        </div>
+                        
+                        <div>
+                            <label for="edad">Edad:</label><br>
+                            <input autocomplete="off"  type="number" id="edad" name="edad" min="0" class="campo" required><br><br>
+                        </div>
+                        
+                        <div>
+                            <label for="telefono">Teléfono:</label><br>
+                            <input autocomplete="off"  type="tel" id="telefono" name="telefono" pattern="[0-9]+" class="campo"required><br><br>
+                        </div>
+                        
+                        <button type="submit" id="boton-formulario">Enviar</button>
+                    </form>
+                </div>
+
             </section>
         </main>
                     
