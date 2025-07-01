@@ -1,7 +1,6 @@
 botonIniciarSesion = document.getElementById('opciones-iniciar_sesion');
 cardPlan = document.getElementsByClassName('card-plan');
 
-
 botonIniciarSesion.addEventListener("click", () =>{
     window.location.href = "/html/login.html";
 });
