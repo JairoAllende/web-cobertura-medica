@@ -1,0 +1,75 @@
+:root {
+  --color-primary: #005792;
+  --color-secondary: #89CFF0;
+  --color-background: #ffffff;
+  --color-surface: #f2f2f2;
+  --color-success: #a8d5ba;
+}
+
+[data-theme="dark"] {
+  --color-primary: #003b66;
+  --color-secondary: #5baad6;
+  --color-background: #1e1e1e;
+  --color-surface: #2c2c2c;
+  --color-success: #7fbf9f;
+}
+
+html,
+body {
+  height: 100vh;
+  margin: 0;
+
+}
+
+body {
+  background-color: var(--color-background);
+  color: var(--color-primary);
+
+}
+
+.navbar-nav {
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+.navbar,
+.footer {
+  background-color: var(--color-primary);
+}
+
+
+
+.image-side {
+  background-image: url(/assets/esposa-visitando-su-marido-enfermo.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+
+.form-side {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #ffffff;
+
+}
+
+@media (max-width: 767.98px) {
+  .image-side {
+    height: 200px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .form-side {
+    height: auto;
+    padding: 2rem 1rem;
+  }
+
+  .form-box {
+    max-width: 100%;
+    padding: 1.5rem;
+  }
+}
