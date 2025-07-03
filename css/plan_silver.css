@@ -147,11 +147,25 @@ main {
 
 .cobertura h3{
     font-size: 1.8rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.cobertura h4{
+    color: var(--color-secundario);
+    font-weight: 600;
 }
 
 .prestaciones-items{
     display: flex;
     justify-content: space-between;
+}
+
+.prestaciones-items p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #container-quiero_plan{

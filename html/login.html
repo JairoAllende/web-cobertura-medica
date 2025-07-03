@@ -3,9 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Login</title>
+    <link rel="stylesheet" href="/css/general.css">
+    <link rel="stylesheet" href="/css/login.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
     
+    <div class="wrapper">
+        
+        <div class="foto-login">
+
+        </div>
+
+        <div id="container-login">
+            <div id="marca">
+                <img src="/assets/imagenes/logo-salud_oeste.png" alt="logo" id="logo-marca">
+                <h1>Salud Oeste</h1>
+            </div>
+
+            <form action="#" method="post" class="form-login">
+                <div>
+                    <label for="documento">Documento:</label><br>
+                    <input type="number" id="documento" name="documento" required autocomplete="off"><br><br>
+                </div>
+                
+                <div>
+                    <label for="contrasena">Contraseña:</label><br>
+                    <input type="password" id="contrasena" name="contrasena" required><br>
+                </div>
+                
+                <div class="olvide-contrasena">
+                    <a href="#">¿Olvidaste tu contraseña?</a>
+                </div><br>
+
+                <button type="button" id="boton">Ingresar</button>
+            </form>
+
+            <div class="iniciar-sesion-con">
+                <h4>o inicia sesión con</h4>
+
+                <div id="container-redes">
+
+                    <div class="logo-red logo-facebook">
+
+                    </div>
+                    <div class="logo-red logo-google">
+
+                    </div>
+                    <div class="logo-red logo-ios">
+
+                    </div>
+                </div>
+            </div>
+
+            <div id="container-crear_cuenta">
+                <p>¿No tenes cuenta? <a href="/html/registro.html" id="crear_cuenta" target="_blank">Crea tu cuenta ahora</a></p>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="/js/login.js"></script>
 </body>
 </html>
