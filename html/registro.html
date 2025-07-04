@@ -8,32 +8,34 @@
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   <link rel="stylesheet" href="/css/general.css">
   <link rel="stylesheet" href="/css/registro.css">
-  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   <title>Registro</title>
 </head>
 
 <body>
 
-  <div class="container-registro">
-    <div class="row ">
-      <!-- Mitad imagen -->
-      <div class="col-md-6 image-side d-none d-md-block">
-        <!-- Imagen de fondo -->
-        
-      </div>
-      <!-- Mitad formulario -->
-      <div class="col-md-6 form-side">
+  <div class="wrapper">
 
+    <div class="imagen-registro">
+
+    </div>
+
+    <div class="container-formulario-registro">
         <div class="form-box">
+
+          <div id="marca">
+            <img src="/assets/imagenes/logo-salud_oeste.png" alt="Logo Salud Oeste" id="logo-marca">
+            <h1>Salud Oeste</h1>
+          </div>
+
           <h2 class="mb-4 text-center">Registrate</h2>
           <form id="container-datos-registros">
             <div class="mb-3">
               <label for="fecha" class="form-label">Fecha de nacimiento</label>
               <input type="date" class="form-control" id="fecha" aria-describedby="inputGroupPrepend" required>
-
             </div>
 
             <div class="mb-3">
@@ -72,20 +74,16 @@
               <input type="password" class="form-control" id="repeat-password">
             </div>
 
-            <div class="mb-3" id="container-carga-dni">
+            <h4 style="text-align: center;">Carga la imagen de tu dni</h4>
+            <div class="container-carga-dni">
               
-              <div class="carga-dni">
-                <label for="dni-frente" class="input-personalizado">Frente</label>
-                <input type="file" id="dni-frente" accept="image/*" hidden>
-              </div>
-              
-              <div carga-dni>
-                <label for="dni-frente" class="input-personalizado">Dorso</label>
-                <input type="file" id="dni-frente" accept="image/*" hidden>
-              </div>
+              <label for="dni-frente" class="input-personalizado"><span class="material-symbols-outlined">stack</span> Frente</label>
+              <input type="file" id="dni-frente" accept="image/*" hidden>
+            </div>
 
-              
-
+            <div class="container-carga-dni">
+              <label for="dni-frente" class="input-personalizado"><span class="material-symbols-outlined">stack</span>Dorso</label>
+              <input type="file" id="dni-frente" accept="image/*" hidden>
             </div>
 
             <div class="form-check">
@@ -95,16 +93,10 @@
               </label>
             </div>
 
-
             <button type="submit" class="btn btn-primary w-100 mt-3">Registrarse</button>
           </form>
         </div>
-      </div>
-
     </div>
-
-
-  </div>
 
   </div>
 

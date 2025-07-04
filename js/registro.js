@@ -85,3 +85,7 @@ document.getElementById('container-datos-registros').addEventListener('submit', 
 });
   }
 });
+
+document.getElementById("marca").addEventListener("click", () =>{
+  window.open("/html/index.html");
+})
