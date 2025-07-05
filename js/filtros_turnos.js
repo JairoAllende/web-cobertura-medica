@@ -1,25 +1,29 @@
 document.getElementById("proximos-turnos").addEventListener("click", ()=> {
-    window.open("/html/index.html");
+    window.open("/html/proximos-turnos.html");
 })
 
 document.getElementById("historial-turnos").addEventListener("click", ()=> {
-    window.open("/html/index.html");
+    window.open("/html/historial.html");
 })
 
 const inputFecha = document.getElementById('fecha');
-const hoy = new Date().toISOString().split('T')[0]; // formato "YYYY-MM-DD"
+const hoy = new Date().toISOString().split('T')[0];
 inputFecha.value = hoy;
-
-const TIPOS_DE_CONSULTA = document.getElementById("tipos-consultas");
-let tipoDeConsultaVacio = true;
-const MUNICIPIO = document.getElementById("municipio");
-let municipioVacio = true;
 
 const BOTON_SIGUIENTE = Array.from(document.getElementsByClassName("boton-siguiente"));
 
+const TIPOS_DE_CONSULTA = document.getElementById("tipos-consultas");
+let tipoDeConsultaVacio = true;
+
+const MUNICIPIO = document.getElementById("municipio");
+let municipioVacio = true;
+
+const LOCALIDAD = document.getElementById("localidad");
+let localidadVacio = true;
+
 TIPOS_DE_CONSULTA.addEventListener("change" , () => {
 
-  if(TIPOS_DE_CONSULTA.value === "vacio"){
+  if(TIPOS_DE_CONSULTA.value === ""){
     tipoDeConsultaVacio = true;
     console.log(tipoDeConsultaVacio);
   }else{
@@ -42,7 +46,7 @@ BOTON_SIGUIENTE[0].addEventListener("click" , () =>{
 
 MUNICIPIO.addEventListener("change" , () => {
 
-  if(MUNICIPIO.value === "vacio"){
+  if(MUNICIPIO.value === ""){
     municipioVacio = true;
     console.log(municipioVacio);
   }else{
@@ -62,4 +66,23 @@ BOTON_SIGUIENTE[1].addEventListener("click" , () =>{
     segundaLinea.classList.remove("linea2-oculta");
     tercerCirculo.classList.remove("circulo3-oculto");
   }
+})
+
+LOCALIDAD.addEventListener("change", () => {
+  
+  if(LOCALIDAD.value === " "){
+    localidadVacio = true;
+  }else{
+    localidadVacio = false;
+  }
+})
+
+document.getElementById("boton-buscar").addEventListener("click" , () => {
+
+  if(!tipoDeConsultaVacio && !municipioVacio && !localidadVacio){
+    window.open("/html/turnos.html");
+  }else{
+    alert("Debe completar todos los campos");
+  }
+
 })

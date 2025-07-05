@@ -224,8 +224,13 @@ input[list] {
 }
 
 .otra-seccion{
-    background-color: var(--color-secundario);
-    color: black;
+    border: 2px solid var(--color-secundario);
+    color: var(--color-principal);
+}
+
+.otra-seccion:active{
+    background-color: var(--color-principal);
+    color: var(--color-surface);
 }
 
 footer{
