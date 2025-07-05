@@ -1,0 +1,245 @@
+html, body{
+    width: 100%;
+    height: 100dvh;
+    display: flex;
+    flex-direction: column;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column; 
+    min-height: 100vh; 
+}
+
+header{
+    background-color: var(--color-principal);
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 0;
+    color: var(--color-surface);
+}
+
+#marca{
+    display: flex;
+    align-items: center;
+    margin-left: 1rem;
+}
+
+#logo-marca{
+    width: 5rem;
+    cursor: pointer;
+}
+
+h1{
+    cursor: pointer;
+}
+
+#mi-perfil{
+    margin-right: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+#mi-perfil-usuario{
+    display: flex;
+    gap: 0.2rem;
+}
+
+#numero-emergencia{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    background-color: red;
+    color: var(--color-surface);
+    padding: 0.5rem;
+    margin-bottom: 2rem;
+}
+
+main{
+    flex: 1;
+    display: grid;
+    grid-template-columns: 85% auto;
+}
+
+#container-buscar-turnos{
+    display: grid;
+    grid-template-columns: 90% 1fr;
+}
+
+#container-bloques{
+    display: flex;
+    flex-direction: column;
+    margin-left: 2rem;
+}
+
+#titulo-buscar-turno{
+    margin-bottom: 2rem;
+}
+
+.bloque-formulario{
+    border: 1px solid;
+    margin-bottom: 6.3rem;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 6rem;
+    border-radius: 10px;
+    background-color: var(--color-principal);
+    color: var(--color-surface);
+}
+
+.campo-consulta{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    width: 40%;
+    font-size: 1.3rem;
+}
+
+input[list] {
+  padding: 0.5rem;
+  font-size: 1rem;
+  border-radius: 6px;
+  border: 1px solid #888;
+  background-color: #f8f8f8;
+}
+
+.campo-formato{
+    display: flex;
+    flex-direction: column;
+    font-size: 1.1rem;
+    gap:0.1rem
+}
+
+.campo-fecha{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    font-size: 1.1rem;
+}
+
+#fecha{
+    height: 2rem;
+    border-radius: 5px;
+    border: none;
+    padding: 0.5rem;
+}
+
+.boton-siguiente{
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.boton-siguiente:hover{
+    opacity: 1;
+}
+
+.bloque2-oculto{
+    display: none;
+}
+
+.bloque3-oculto{
+    display: none;
+}
+
+.boton-buscar{
+    background-color: var(--color-principal);
+    border: 2px solid var(--color-secundario);
+    padding: 1rem;
+    border-radius: 20px;
+    opacity: 1;
+}
+
+.boton-buscar:hover{
+    background-color: var(--color-secundario);
+    color: var(--color-principal);
+}
+
+#progreso{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5.5rem;
+}
+
+.circulo{
+    width: 2rem;
+    height: 2rem;
+    border: 5px solid var(--color-principal);
+    border-radius: 50%;
+}
+
+.circulo1-completo{
+    background-color: var(--color-principal);
+}
+
+.linea1-oculta{
+    display: none;
+}
+
+.circulo2-oculto{
+    display: none;
+}
+
+.circulo2-completo{
+    background-color: var(--color-principal);
+}
+
+.linea2-oculta{
+    display: none;
+}
+
+.linea{
+    width: 0.5rem;
+    height: 30%;
+    background-color: var(--color-principal);
+}
+
+.circulo3-oculto{
+    display: none;
+}
+
+#container-secciones-turnos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#seccion-actual{
+    background-color: var(--color-principal);
+    color: var(--color-surface);
+}
+
+.secciones{
+    width: 60%;
+    text-align: center;
+    padding: 1rem;
+    cursor: pointer;
+    margin-bottom: 1rem;
+}
+
+.otra-seccion{
+    background-color: var(--color-secundario);
+    color: black;
+}
+
+footer{
+    color: var(--color-surface);
+    display: flex;
+    align-items: center;
+    background-color: var(--color-principal);
+    font-size: 0.8rem;
+    padding-left: 1rem;
+    margin-top: 5rem;
+}
+
+.logos-redes{
+    width: 4rem;
+    height: 4rem;
+    cursor: pointer;
+}

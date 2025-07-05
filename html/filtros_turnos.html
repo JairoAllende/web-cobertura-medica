@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedir turno</title>
+    <link rel="stylesheet" href="/css/filtros_turnos.css">
+    <link rel="stylesheet" href="/css/general.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <div class="wrapper">
+
+        <header>
+            <div id="marca">
+                <img src="/assets/imagenes/logo-salud_oeste.png" alt="logo" id="logo-marca">
+                <h1>Salud Oeste</h1>
+            </div>
+            
+            <div id="mi-perfil">
+                <div id="mi-perfil-usuario">
+                    <span class="material-symbols-outlined">account_circle</span>
+                    <h3>Jose Hernandez</h3>
+                </div>
+                <span class="material-symbols-outlined">keyboard_arrow_down</span>
+            </div>
+        </header>
+        
+        <section id="numero-emergencia">
+            <span class="material-symbols-outlined" style="font-size: 1.8rem;">call</span>
+            <p>Emergencias: 0800-888-888</p>
+        </section>
+
+        <main>
+
+            <div id="container-buscar-turnos">
+                
+                <div id="container-bloques">
+                
+                    <h2 id="titulo-buscar-turno">Buscar turno</h2>
+                    
+                    <div class="bloque-formulario">
+                        <div class="campo-consulta">
+                            <h5>Escribi el tipo de consulta, estudio o lo que estes buscando:</h5>
+
+                            <input list="tipos-consulta" id="tipos-consultas" name="tipo-consulta" placeholder="Escribí o seleccioná">
+                            <datalist id="tipos-consulta">
+                                <option value="CARDIOLOGO">
+                                <option value="CLINICA MEDICA">
+                                <option value="DERMATOLOGIA">
+                                <option value="OFTALMOLOFIA">
+                                <option value="PEDIATRA">
+                                <option value="TRAUMATOLOGIA">
+                            </datalist>
+
+                        </div>
+
+                        <div class="campo-formato">
+                            <h5>Formato:</h5>
+
+                            <div>
+                                <label for="presencial">Presencial</label>
+                                <input type="radio" value="presencial" name="formato" checked>
+                            </div>
+
+                            <div>
+                                <label for="virtual">Virtual</label>
+                                <input type="radio" value="virtual" name="formato">
+                            </div>
+                            
+                        </div>
+
+                        <div class="campo-fecha">
+                            <h5>Elegi la fehca:</h5>
+
+                            <input type="date" id="fecha">
+                        </div>
+
+                        <div class="boton-siguiente">
+                            <h3>Siguiente</h3>
+                        </div>
+                    </div>
+
+                    <div class="bloque2-oculto bloque-formulario" id="bloque2">
+                        <div class="campo-consulta">
+                            <h5>Escribi el municipio:</h5>
+
+                            <input list="lista-municipios" id="municipio" name="municipio" placeholder="Escribí o seleccioná">
+
+                            <datalist id="lista-municipios">
+                              <option value="GENERAL RODRIGUEZ">
+                              <option value="HURLINGHAM">
+                              <option value="ITUZAINGO">
+                              <option value="LA MATANZA">
+                              <option value="MARCOS PAZ">
+                              <option value="MERLO">
+                              <option value="MORENO">
+                              <option value="MORON">
+                              <option value="TRES DE FEBRERO">
+                            </datalist>
+
+                        </div>
+
+                        <div class="boton-siguiente">
+                            <h3>Siguiente</h3>
+                        </div>
+                    </div>
+
+                    <div class="bloque3-oculto bloque-formulario" id="bloque3">
+                        <div class="campo-consulta">
+                            <h5>Escribi la localidad:</h5>
+
+                            <input list="lista-localidad" id="localidad" name="localidad" placeholder="Escribí o seleccioná">
+                            <datalist id="lista-localidad">
+                                <option value="20 DE JUNIO">20 de Junio</option>
+                                <option value="ALDO BONZI">Aldo Bonzi</option>
+                                <option value="AGUSTÍN FERRARI">Agustín Ferrari</option>
+                                <option value="CASTELAR">Castelar</option>
+                                <option value="CASEROS">Caseros</option>
+                                <option value="CHURRUCA">Churruca</option>
+                                <option value="CIUDAD EVITA">Ciudad Evita</option>
+                                <option value="CIUDAD JARDÍN">Ciudad Jardín</option>
+                                <option value="CIUDADELA">Ciudadela</option>
+                                <option value="EL LIBERTADOR">El Libertador</option>
+                                <option value="EL PALOMAR">El Palomar</option>
+                                <option value="FRANCISCO ÁLVAREZ">Francisco Álvarez</option>
+                                <option value="GONZÁLEZ CATÁN">González Catán</option>
+                                <option value="GREGORIO DE LAFERRERE">Gregorio de Laferrere</option>
+                                <option value="HAEDO">Haedo</option>
+                                <option value="HURLINGHAM">Hurlingham</option>
+                                <option value="ISIDRO CASANOVA">Isidro Casanova</option>
+                                <option value="ITUZAINGÓ">Ituzaingó</option>
+                                <option value="JOSÉ INGENIEROS">José Ingenieros</option>
+                                <option value="LA REJA">La Reja</option>
+                                <option value="LA TABLADA">La Tablada</option>
+                                <option value="LIBERTAD">Libertad</option>
+                                <option value="LOMA HERMOSA">Loma Hermosa</option>
+                                <option value="LOMAS DEL MIRADOR">Lomas del Mirador</option>
+                                <option value="MARCOS PAZ">Marcos Paz</option>
+                                <option value="MARIANO ACOSTA">Mariano Acosta</option>
+                                <option value="MARTÍN CORONADO">Martín Coronado</option>
+                                <option value="MERLO">Merlo</option>
+                                <option value="MORENO">Moreno</option>
+                                <option value="MORÓN">Morón</option>
+                                <option value="ONCE DE SEPTIEMBRE">Once de Septiembre</option>
+                                <option value="PABLO PODESTÁ">Pablo Podestá</option>
+                                <option value="PARQUE SAN MARTÍN">Parque San Martín</option>
+                                <option value="PASO DEL REY">Paso del Rey</option>
+                                <option value="PONTEVEDRA">Pontevedra</option>
+                                <option value="RAFAEL CASTILLO">Rafael Castillo</option>
+                                <option value="RAMOS MEJÍA">Ramos Mejía</option>
+                                <option value="REMEDIOS DE ESCALADA">Remedios de Escalada</option>
+                                <option value="SAN ANTONIO DE PADUA">San Antonio de Padua</option>
+                                <option value="SAN JUSTO">San Justo</option>
+                                <option value="SANTOS LUGARES">Santos Lugares</option>
+                                <option value="SÁENZ PEÑA">Sáenz Peña</option>
+                                <option value="TAPIALES">Tapiales</option>
+                                <option value="TRUJUI">Trujui</option>
+                                <option value="VILLA BOSCH">Villa Bosch</option>
+                                <option value="VILLA EDUARDO MADERO">Villa Eduardo Madero</option>
+                                <option value="VILLA LUZURIAGA">Villa Luzuriaga</option>
+                                <option value="VILLA RAFFO">Villa Raffo</option>
+                                <option value="VILLA SARMIENTO">Villa Sarmiento</option>
+                                <option value="VILLA TESEI">Villa Tesei</option>
+                                <option value="VIRREY DEL PINO">Virrey del Pino</option>
+                                <option value="WILLIAM C. MORRIS">William C. Morris</option>
+                            </datalist>
+                            
+                        </div>
+                        
+                        <div class="boton-buscar boton-siguiente">
+                            <h3>Buscar</h3>
+                        </div>
+                    </div>
+
+                </div>
+                
+                <div id="progreso">
+                    <div class="circulo"></div>
+                    <div class="linea1-oculta linea"></div>
+                    <div class="circulo2-oculto circulo"></div>
+                    <div class="linea2-oculta linea"></div>
+                    <div class="circulo3-oculto circulo"></div>
+                </div>
+        
+            </div>
+
+            <div id="container-secciones-turnos">
+                <div class="secciones" id="seccion-actual">
+                    <h5>Buscar turno</h5>
+                </div>
+                
+                <div class="secciones otra-seccion" id="proximos-turnos" >
+                    <h5>Proximos turnos</h5>
+                </div>
+
+                <div class="secciones otra-seccion" id="historial-turnos">
+                    <h5>Historial de turnos</h5>
+                </div>
+            </div>
+
+        </main>
+
+        <footer>
+            <h2>Hablanos en nuestras redes:</h2>
+            <img src="/assets/imagenes/logo-facebook.png" alt="logo facebook" class="logos-redes">
+            <img src="/assets/imagenes/logo-instagram.png" alt="logo instagram" class="logos-redes">
+            <img src="/assets/imagenes/logo-x.png" alt="logo x" class="logos-redes">     
+        </footer>
+
+    </div>
+
+    <script src="/js/filtros_turnos.js"></script>
+</body>
+</html>
