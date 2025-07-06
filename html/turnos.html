@@ -75,7 +75,7 @@
                     </div>
                     <div class="appointment-info">
                         <span>Lunes 23, Jun. 16:00hs</span>
-                        <button class="btn-confirmar">Confirmar</button>
+                        <button class="btn-confirmar" id="boton-confirmar">Confirmar</button>
                     </div>
                 </div>
 
@@ -115,6 +115,14 @@
                             }
                         });
                     });
+                </script>
+
+                <script>
+                    const botonConfirmar = document.getElementById("boton-confirmar");
+                    botonConfirmar.addEventListener("click", () => {
+                        window.location.href ="/html/proximos-turnos.html";
+                    })
+
                 </script>
 
 </body>
