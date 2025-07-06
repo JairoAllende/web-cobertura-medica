@@ -6,6 +6,20 @@ document.getElementById("historial-turnos").addEventListener("click", ()=> {
     window.open("/html/historial.html");
 })
 
+document.getElementById("boton-buscar").addEventListener("click" , () => {
+
+  if(!tipoDeConsultaVacio && !municipioVacio && !localidadVacio){
+    window.open("/html/turnos.html");
+  }else{
+    alert("Debe completar todos los campos");
+  }
+
+})
+
+document.getElementById("hacia-atras").addEventListener("click", ()=> {
+  window.location.href = "/html/home.html";
+})
+
 const inputFecha = document.getElementById('fecha');
 const hoy = new Date().toISOString().split('T')[0];
 inputFecha.value = hoy;
@@ -77,12 +91,3 @@ LOCALIDAD.addEventListener("change", () => {
   }
 })
 
-document.getElementById("boton-buscar").addEventListener("click" , () => {
-
-  if(!tipoDeConsultaVacio && !municipioVacio && !localidadVacio){
-    window.open("/html/turnos.html");
-  }else{
-    alert("Debe completar todos los campos");
-  }
-
-})

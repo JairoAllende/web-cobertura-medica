@@ -74,13 +74,25 @@ main{
     margin-left: 2rem;
 }
 
+#hacia-atras{
+    margin-bottom: 1rem;
+    color: var(--color-principal);
+    font-size: 2rem;
+    cursor: pointer;
+    width: 2rem;
+}
+
+#hacia-atras:active{
+    color: var(--color-secundario);
+}
+
 #titulo-buscar-turno{
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 }
 
 .bloque-formulario{
     border: 1px solid;
-    margin-bottom: 6.3rem;
+    margin-bottom: 5.3rem;
     padding: 1rem;
     display: flex;
     justify-content: space-between;
@@ -164,7 +176,7 @@ input[list] {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 5.5rem;
+    margin-top: 7rem;
 }
 
 .circulo{
