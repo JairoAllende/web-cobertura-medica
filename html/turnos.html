@@ -1,12 +1,18 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Turnos Disponibles</title>
-    <link rel="stylesheet" href="../css/style.css">
+
+    <link rel="stylesheet" href="/css/turnos.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css" />
+
+
 </head>
+
 <body>
     <header>
         <div class="header-left">
@@ -29,25 +35,30 @@
                     <option>San Justo</option>
                 </select>
             </div>
-             <div class="filtro-group">
+            <div class="filtro-group">
                 <select class="custom-select">
                     <option>Centros</option>
                     <option>Sanatorio de la Trinidad</option>
                     <option>Hospital Italiano</option>
                 </select>
             </div>
-             <div class="filtro-group">
+            <div class="filtro-group">
                 <select class="custom-select">
                     <option>Día semanal</option>
                     <option>Lunes</option>
                     <option>Martes</option>
+                    <option>Miercoles</option>
+                    <option>Jueves</option>
+                    <option>Viernes</option>
                 </select>
             </div>
-             <div class="filtro-group">
+            <div class="filtro-group">
                 <select class="custom-select">
                     <option>Especialista</option>
                     <option>Clínico Médico</option>
                     <option>Cardiólogo</option>
+                    <option>Dermatologia</option>
+                    <option>Nutricionista</option>
                 </select>
             </div>
         </aside>
@@ -79,3 +90,31 @@
                 <div class="turno-card placeholder"></div>
                 <div class="turno-card placeholder"></div>
                 <div class="turno-card placeholder"></div>
+
+
+
+                <footer>
+                    <span>&copy; 2025 - Salud Oeste</span>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </footer>
+
+
+                <script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
+                <script>
+                    const selects = document.querySelectorAll('.custom-select');
+                    selects.forEach(select => {
+                        new Choices(select, {
+                            searchEnabled: false,
+                            itemSelectText: '',
+                            classNames: {
+                                containerOuter: 'choices custom-choices',
+                            }
+                        });
+                    });
+                </script>
+
+</body>
