@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+    padding-bottom: 80px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: #005792;
+    border-bottom: 1px solid #e0e0e0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.main-container {
+    display: flex;
+    gap: 30px;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.header-left .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #005792;
+}
+
+.header-center {
+    color: #ced4da;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.header-right {
+    font-weight: 500;
+    color: #ced4da;
+    cursor: pointer;
+}
+
+.header-right i,
+.header-center i {
+    margin-right: 8px;
+}
+
+.turnos-content h1 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    padding-left: 10px;
+}
+
+
+.filtros-sidebar {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+    width: 220px;
+    flex-shrink: 0;
+}
+
+.filtros-sidebar h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #005792;
+}
+
+.filtro-group {
+    margin-bottom: 15px;
+}
+
+.custom-select {
+    width: 100%;
+    padding: 10px 12px;
+    border-radius: 8px;
+    border: 1px solid #ced4da;
+    font-size: 14px;
+    background-color: #f8f9fa;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+
+
+
+
+.turnos-content {
+    flex: 1;
+    min-width: 280px;
+}
+
+.turnos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+.turno-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.2s;
+}
+
+.turno-card:hover {
+    transform: translateY(-4px);
+}
+
+.turno-card.placeholder {
+    background-color: #e0e0e0;
+    border-radius: 12px;
+    height: 200px;
+    opacity: 0.6;
+}
+
+.card-content h3 {
+    color: #005792;
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.card-content p {
+    font-size: 14px;
+    margin-bottom: 6px;
+}
+
+.appointment-info {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    color: #333;
+}
+
+.btn-confirmar {
+    background-color: #89CFF0;
+    color: #003f5c;
+    padding: 8px 14px;
+    border: none;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-confirmar:hover {
+    background-color: #5bb7e6;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 30px;
+    background-color: #ffffff;
+    border-top: 1px solid #e0e0e0;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.04);
+}
+
+footer span {
+    color: #555;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.social-icons {
+    display: flex;
+    gap: 12px;
+}
+
+.social-icon {
+    width: 32px;
+    height: 32px;
+    background-color: #d8dcdf;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #555;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.social-icon:hover {
+    background-color: #005792;
+    color: white;
+    transform: scale(1.1);
+}
+
+.choices__list--dropdown .choices__item--selectable.is-highlighted {
+    background-color: #e0f3ff !important;
+    color: #003f5c !important;
+}
+
+
+.choices {
+    font-size: 14px;
+    border-radius: 8px;
+}
+
+.choices__inner {
+    background-color: #f8f9fa;
+    border: 1px solid #ced4da;
+    padding: 8px 12px;
+    min-height: 44px;
+    border-radius: 8px;
+}
+
+.choices__list--dropdown {
+    border: 1px solid #ced4da;
+    border-radius: 8px;
+}
+
+
+@media (max-width: 768px) {
+    header {
+        padding: 10px 15px;
+        flex-direction: column;
+        gap: 6px;
+        text-align: center;
+    }
+
+    .header-center {
+        order: -1;
+        font-size: 14px;
+    }
+
+    .filtros-sidebar {
+        width: 100%;
+        padding: 15px;
+        border-radius: 0;
+        box-shadow: none;
+        margin-bottom: 20px;
+    }
+
+    .turnos-content h1 {
+        font-size: 20px;
+        margin-bottom: 20px;
+        padding-left: 10px;
+    }
+
+    .turnos-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .turno-card {
+        padding: 15px;
+    }
+
+    .appointment-info {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+
+    .btn-confirmar {
+        width: 100%;
+        text-align: center;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+        padding: 12px 20px;
+    }
+
+    .social-icons {
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .header-left .logo {
+        font-size: 20px;
+    }
+}
