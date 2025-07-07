@@ -346,10 +346,15 @@
 
                 <script>
                     const botonConfirmar = document.getElementsByClassName("btn-confirmar");
-                    Array.from(botonConfirmar).forEach((boton) => addEventListener("click" , ()=>{
-                        window.open("/html/proximos-turnos.html");
-                    }))
+                    Array.from(botonConfirmar).forEach((boton) =>
+                        boton.addEventListener("click", () => {
+                            window.open("/html/proximos-turnos.html");
+                        })
+                    )
 
+                    document.getElementById("marca").addEventListener("click" , () => {
+                        window.location.href = "/html/home.html";
+                    })
                 </script>
 
 </body>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/general.css">
+    <link rel="stylesheet" href="/css/smartcard.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>SmartCard</title>
+</head>
+<body>
+
+    <header>
+        <div id="marca">
+            <img src="/assets/imagenes/logo-salud_oeste.png" alt="logo" id="logo-marca">
+            <h1>Salud Oeste</h1>
+        </div>
+        
+        <div id="mi-perfil">
+            <div>
+                <div id="mi-perfil-usuario">
+                <span class="material-symbols-outlined">account_circle</span>
+                <h3>Jose Hernandez</h3>
+                <span class="material-symbols-outlined" id="arrow_down">keyboard_arrow_down</span>
+                </div>
+            </div>
+            
+            <div id="opciones-mi_perfil">
+                <a href="#">Mis datos</a>
+                <a href="/html/plan_silver.html">Mi plan</a>
+                <a href="/html/smartcard.html">SmartCard</a>
+            </div>
+        </div>
+    </header>
+
+    <section id="numero-emergencia">
+        <span class="material-symbols-outlined" style="font-size: 1.8rem;">call</span>
+        <p>Emergencias: 0800-888-888</p>
+    </section>
+    
+    <h2><span class="material-symbols-outlined" id="arrow_back" style="font-size: 2rem;">arrow_back_ios_new</span></h2>
+    
+    <main>
+
+        <div id="smartcard">
+
+            <div id="container-salud_oeste">
+                <img src="/assets/imagenes/logo-salud_oeste.png" alt="logo" id="logo-marca">
+                <h2>Salud Oeste</h2>
+            </div>
+
+            <div id="container-foto-datos">
+
+                <div id="smartcard-foto">
+                    
+                </div>
+
+                <div id="datos-personales">
+                    <h3>N°: 1 112 223 334 44</h3>
+                    <p>Jose Hernandez</p>
+                    <p>Plan Silver</p>
+                    <div id="container-fecha">
+                        <div>
+                            <h4>Ingreso</h4>
+                            <p>09</p>
+                        </div>
+                        <div>
+                            <h4>Desde 04/25</h4>
+                            <p>09</p>
+                        </div>
+                        <div>
+                            <h4>Hasta</h4>
+                            <p>02/29</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+    <footer>
+        <h2>Hablanos en nuestras redes:</h2>
+        <img src="/assets/imagenes/logo-facebook.png" alt="logo facebook" class="logos-redes">
+        <img src="/assets/imagenes/logo-instagram.png" alt="logo instagram" class="logos-redes">
+        <img src="/assets/imagenes/logo-x.png" alt="logo x" class="logos-redes">     
+    </footer>
+
+    <script>
+        document.getElementById("arrow_down").addEventListener("mouseenter" , () => {
+        document.getElementById("opciones-mi_perfil").style.display="flex"
+        })
+
+        document.getElementById("mi-perfil").addEventListener("mouseleave" , () => {
+            document.getElementById("opciones-mi_perfil").style.display="none"
+        })
+
+        document.getElementById("opciones-mi_perfil").addEventListener("mouseleave" , () => {
+            document.getElementById("opciones-mi_perfil").style.display="none"
+        })
+
+        document.getElementById("arrow_back").addEventListener("click", () => {
+            window.location.href = "/html/home.html";
+        })
+    </script>
+
+</body>
+</html>

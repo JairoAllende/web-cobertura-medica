@@ -38,12 +38,38 @@ h1{
     margin-right: 1rem;
     display: flex;
     align-items: center;
-    gap: 0.5rem;
+    flex-direction: column;
+    justify-content: center;
 }
 
 #mi-perfil-usuario{
     display: flex;
     gap: 0.2rem;
+    position: relative;
+    z-index: 1;
+}
+
+#opciones-mi_perfil{
+    position: absolute;
+    top: 65px;
+    width: 214px;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-secundario);
+    color: #000;
+    display: none;
+}
+
+#opciones-mi_perfil a{
+    text-decoration: none;
+    color: #000;
+    padding: 0.7rem 1rem;
+}
+
+#opciones-mi_perfil a:hover{
+    cursor: pointer;
+    background-color: var(--color-principal);
+    color: var(--color-surface);
 }
 
 #numero-emergencia{
