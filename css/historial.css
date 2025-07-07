@@ -75,6 +75,7 @@ header {
   flex-basis: 220px;
   display: flex;
   margin-left: 20px;
+  height: 23dvh;
 }
 .sidebar nav ul {
   list-style: none;
@@ -462,9 +463,6 @@ footer span {
 .btn-preparaciones {
   background-color: green;
   color: var(--color-surface);
-}
-.btn-preparaciones:hover {
-  background-color: #5a6268;
 }
 
 .btn-cancelar {
