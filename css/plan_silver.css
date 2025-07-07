@@ -42,9 +42,10 @@ h1{
     color: var(--color-surface);
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    width: 25%;
+    justify-content: space-around;
+    width: 30%;
     margin-right: 1rem;
+    gap: 1rem;
 }
 
 .opciones{
@@ -53,6 +54,7 @@ h1{
     justify-content: center;
     cursor: pointer;
     gap: 0.2rem;
+    width: 100%;
 }
 
 #opciones-iniciar_sesion{
@@ -105,6 +107,7 @@ main {
     justify-content: flex-start;
     font-size: 1.8rem;
     text-align: center;
+    width: 20%;
 }
 
 #medalla{
@@ -116,6 +119,8 @@ main {
     padding: 1.2rem;
     border-radius: 10px;
     cursor: pointer;
+    width: 20%;
+    text-align: center;
 }
 
 #container-mas_informacion:hover{
@@ -375,4 +380,196 @@ footer{
 #container-nov button:hover{
     background-color: var(--color-principal);
     color: var(--color-surface);
+}
+
+@media (max-width: 992px) {
+  #containter-opciones {
+    width: 60%;
+    font-size: 0.95rem;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  #container-titulo-plan {
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem 1rem;
+    height: auto;
+    text-align: center;
+  }
+
+  #presentacion {
+    width: 90%;
+    margin: 0 auto;
+    font-size: 1.1rem;
+  }
+
+  #plan {
+    font-size: 1.3rem;
+  }
+
+  #container-mas_informacion {
+    width: 90%;
+    margin: 0 auto;
+    font-size: 1rem;
+  }
+
+  #container-prestaciones {
+    width: 90%;
+    margin: 3rem auto;
+    font-size: 1rem;
+  }
+
+  #form-informacion-plan,
+  #quiero_plan {
+    width: 90%;
+  }
+
+  #formulario {
+    width: 90%;
+  }
+
+  #footer-main {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  #container-logo-redes {
+    width: 100%;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  #container-enlaces {
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+  }
+
+  .enlaces {
+    width: 100%;
+    border-left: none;
+    border-bottom: 1px solid var(--color-secundario);
+    padding-bottom: 1rem;
+  }
+
+  #container-nov {
+    width: 90%;
+    margin: 2rem auto;
+  }
+}
+
+@media (max-width: 576px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 0;
+  }
+
+  #containter-opciones {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    margin-right: 0;
+  }
+
+  #numero-emergencia {
+    font-size: 1rem;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 0.3rem;
+  }
+
+  #container-titulo-plan {
+    flex-direction: column;
+    gap: 2rem;
+    padding: 1rem 0.5rem;
+    height: auto;
+  }
+
+  #presentacion {
+    width: 100%;
+    font-size: 1rem;
+  }
+
+  #plan {
+    font-size: 1rem;
+  }
+
+  #container-mas_informacion {
+    width: 100%;
+    font-size: 0.95rem;
+    padding: 0.7rem;
+  }
+
+  #container-prestaciones {
+    width: 90%;
+    
+    font-size: 0.95rem;
+    padding: 0.5rem;
+  }
+
+  .cobertura h3 {
+    font-size: 1.1rem;
+  }
+
+  .cobertura h4 {
+    font-size: 1rem;
+  }
+
+  .prestaciones-items {
+    flex-direction: column;
+    gap: 0.2rem;
+  }
+
+  #form-informacion-plan,
+  #quiero_plan {
+    width: 100%;
+  }
+
+  #formulario {
+    width: 100%;
+    padding: 0.5rem;
+  }
+
+  #footer-main {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 0.2rem;
+  }
+
+  #container-logo-redes {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 0;
+  }
+
+  #container-enlaces {
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 100%;
+  }
+
+  .enlaces {
+    width: 100%;
+    border-left: none;
+    border-bottom: 1px solid var(--color-secundario);
+    padding-bottom: 0.5rem;
+  }
+
+  #container-nov {
+    width: 100%;
+    margin: 1rem 0;
+    padding: 0.5rem 0;
+  }
+
+  .logo-alianza {
+    width: 3rem;
+  }
 }
