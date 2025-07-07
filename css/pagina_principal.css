@@ -91,6 +91,7 @@ main {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    text-align: center;
     gap: 0.5rem;
 }
 
@@ -151,13 +152,16 @@ main {
 
 #container-socios{
     background-image: url(/assets/imagenes/foto-socios.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 #container-empresas{
     background-image: url(/assets/imagenes/foto-empresas2.png);
     background-position: center;
     background-size: cover;
-    
+    background-repeat: no-repeat;
 }
 
 #container-planes{
@@ -181,7 +185,7 @@ main {
     justify-content: center;
     align-items: center;
     border: 1px solid black;
-    width: 20%;
+    width: 20.5%;
     color: var(--color-surface);
     background-image: url(/assets/imagenes/fondo-planes.png);
     background-repeat: no-repeat;
@@ -240,6 +244,7 @@ main {
     position: relative;
     z-index: 2;
     font-size: 2rem;
+    text-shadow: 2px 2px 2px var(--color-principal);
 }
 
 .card-info{
@@ -262,6 +267,8 @@ main {
     justify-content: center;
     gap: 0.2rem;
     cursor: pointer;
+    border: none;
+    box-shadow: 5px 5px 5px;
 }
 
 .card-info button:hover{
@@ -424,4 +431,144 @@ footer{
 #container-nov button:hover{
     background-color: var(--color-principal);
     color: var(--color-surface);
+}
+
+@media ((max-width:1669px)){
+    .card-plan{
+        width: 24%;
+    }
+}
+
+@media (max-width: 992px) {
+  #containter-opciones {
+    width: 40%;
+    font-size: 0.9rem;
+  }
+
+  #container-cards-planes {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+  }
+
+  .card-plan {
+    width: 80%;
+    height: 20rem;
+    background-position: center;
+  }
+
+  #ventajas {
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .card-ventaja {
+    width: 40%;
+  }
+
+  #footer-main {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #container-logo-redes {
+    width: 100%;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  #container-enlaces {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .enlaces {
+    width: 100%;
+    border-left: none;
+    border-bottom: 1px solid var(--color-secundario);
+  }
+
+  #container-nov {
+    width: 80%;
+    margin: 2rem 0;
+  }
+}
+
+@media (max-width: 576px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  #containter-opciones {
+    width: 90%;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .container-informacion_principal {
+    grid-template-columns: 1fr;
+    height: auto;
+  }
+
+  #container-socios-empresas {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .socios-empresas {
+    width: 80%;
+    height: 20rem;
+  }
+
+  .card-plan {
+    width: 80%;
+    height: 20rem;
+    background-image: url(/assets/imagenes/fondo-planes.png);
+    background-position: center;
+    background-size: cover;
+  }
+
+  .card-ventaja {
+    width: 90%;
+  }
+
+  #container-cards-planes {
+    gap: 2rem;
+  }
+
+  .card-info-plan{
+    font-size: 0.8rem;
+  }
+
+  .card-info-plan button{
+    padding: 0.5rem;
+  }
+
+  #container-ventajas{
+    text-align: center;
+  }
+
+  #ventajas {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #footer-main {
+    padding: 1rem;
+  }
+
+  #container-logo-redes {
+    flex-direction: column;
+  }
+
+  #container-nov form {
+    width: 100%;
+  }
+
+  .form-campo {
+    width: 100%;
+  }
 }
