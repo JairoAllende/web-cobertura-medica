@@ -5,26 +5,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Turnos Disponibles</title>
-
     <link rel="stylesheet" href="/css/turnos.css">
+    <link rel="stylesheet" href="/css/general.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css" />
-
-
+     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 
 <body>
+    
     <header>
-        <div class="header-left">
-            <span class="logo">Logo</span>
+        <div id="marca">
+            <img src="/assets/imagenes/logo-salud_oeste.png" alt="logo" id="logo-marca">
+            <h1>Salud Oeste</h1>
         </div>
-        <div class="header-center">
-            <span><i class="fas fa-exclamation-circle"></i> Emergencias: 0800 - 888 - 888</span>
-        </div>
-        <div class="header-right">
-            <span><i class="fas fa-user"></i> Usuario <i class="fas fa-chevron-down"></i></span>
+        
+        <div id="mi-perfil">
+            <div id="mi-perfil-usuario">
+                <span class="material-symbols-outlined">account_circle</span>
+                <h3>Jose Hernandez</h3>
+            </div>
+            <span class="material-symbols-outlined">keyboard_arrow_down</span>
         </div>
     </header>
+
+    <section id="numero-emergencia">
+        <span class="material-symbols-outlined" style="font-size: 1.8rem;">call</span>
+        <p>Emergencias: 0800-888-888</p>
+    </section>
 
     <div class="main-container">
         <aside class="filtros-sidebar">
@@ -79,7 +90,9 @@
                     </div>
                 </div>
 
-                <div class="turno-card placeholder"></div>
+                <div class="turno-card placeholder">
+                    
+                </div>
                 <div class="turno-card placeholder"></div>
                 <div class="turno-card placeholder"></div>
                 <div class="turno-card placeholder"></div>
@@ -93,14 +106,12 @@
 
 
 
-                <footer>
-                    <span>&copy; 2025 - Salud Oeste</span>
-                    <div class="social-icons">
-                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
-                        <a href="#" class="social-icon"><i class="fab fa-whatsapp"></i></a>
-                    </div>
-                </footer>
+            <footer>
+                <h2>Hablanos en nuestras redes:</h2>
+                <img src="/assets/imagenes/logo-facebook.png" alt="logo facebook" class="logos-redes">
+                <img src="/assets/imagenes/logo-instagram.png" alt="logo instagram" class="logos-redes">
+                <img src="/assets/imagenes/logo-x.png" alt="logo x" class="logos-redes">     
+            </footer>
 
 
                 <script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
