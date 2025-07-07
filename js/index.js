@@ -10,3 +10,7 @@ Array.from(cardPlan).forEach(element => {
     window.open("/html/plan_silver.html", "_blank")
   });
 });
+
+document.getElementById("container-socios").addEventListener("click", () => {
+  window.location.href="/html/login.html";
+})
