@@ -141,3 +141,67 @@ html, body{
     color: var(--color-principal);
     cursor: pointer;
 }
+
+@media (max-width: 992px) {
+  .foto-login {
+    background-position: 30%;
+  }
+  #container-login {
+    width: 100%;
+    padding: 2rem 1rem;
+  }
+  .form-login input{
+    width: 100%;
+    min-width: 0;
+  }
+
+  .form-login button{
+    width: 50%;
+  }
+  .logo-red {
+    width: 4rem;
+    height: 4rem;
+  }
+}
+
+@media (max-width: 576px) {
+.wrapper {
+    grid-template-columns: 1fr;
+  }
+
+.foto-login{
+    display: none;
+}
+  #container-login {
+    padding: 1rem 0.5rem;
+  }
+  #marca {
+    flex-direction: column;
+    margin-left: 0;
+    gap: 0.5rem;
+    text-align: center;
+  }
+  #logo-marca {
+    width: 4rem;
+  }
+  .form-login {
+    margin-top: 1rem;
+  }
+  .form-login input{
+    width: 100%;
+    font-size: 1rem;
+    padding: 0.3rem 0.2rem;
+  }
+  .logo-red {
+    width: 3rem;
+    height: 3rem;
+  }
+  .iniciar-sesion-con h4 {
+    font-size: 1rem;
+  }
+  #container-crear_cuenta {
+    margin-top: 1rem;
+    font-size: 0.95rem;
+    text-align: center;
+  }
+}
