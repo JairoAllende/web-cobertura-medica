@@ -13,37 +13,50 @@ body {
     padding-bottom: 80px;
 }
 
-header {
+header{
+    background-color: var(--color-principal);
     display: flex;
     justify-content: space-between;
+    padding: 0.5rem 0;
+    color: var(--color-surface);
+}
+
+#marca{
+    display: flex;
     align-items: center;
-    padding: 15px 30px;
-    background-color:#005792;
-    border-bottom: 1px solid #e0e0e0;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    justify-content: center;
+    margin-left: 1rem;
 }
 
-.header-left .logo {
-    font-size: 24px;
-    font-weight: bold;
-    color: #005792;
-}
-
-.header-center {
-    color: #ced4da;
-    font-weight: 500;
-    font-size: 16px;
-}
-
-.header-right {
-    font-weight: 500;
-    color: #ced4da;
+#logo-marca{
+    width: 5rem;
     cursor: pointer;
 }
 
-.header-right i,
-.header-center i {
-    margin-right: 8px;
+#marca h1{
+    cursor: pointer;
+}
+
+#mi-perfil{
+    margin-right: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+#mi-perfil-usuario{
+    display: flex;
+    gap: 0.2rem;
+}
+
+#numero-emergencia{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    background-color: red;
+    color: var(--color-surface);
+    padding: 0.5rem;
 }
 
 .main-container {
@@ -101,6 +114,10 @@ header {
 .sidebar nav ul li.active a {
     background-color: #005792;
     color: white;
+}
+
+.main-container h1{
+    margin-bottom: 1rem;
 }
 
 .timeline {
@@ -262,10 +279,21 @@ footer {
     box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.04);
 }
 
-footer span {
-    color: #555;
-    font-size: 14px;
-    font-weight: 500;
+footer{
+    color: var(--color-surface);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: var(--color-principal);
+    font-size: 0.8rem;
+    padding-left: 1rem;
+    margin-top: 5rem;
+}
+
+.logos-redes{
+    width: 4rem;
+    height: 4rem;
+    cursor: pointer;
 }
 
 .social-icons {
