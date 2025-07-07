@@ -1,11 +1,3 @@
-document.getElementById("proximos-turnos").addEventListener("click", ()=> {
-    window.open("/html/proximos-turnos.html");
-})
-
-document.getElementById("historial-turnos").addEventListener("click", ()=> {
-    window.open("/html/historial.html");
-})
-
 document.getElementById("boton-buscar").addEventListener("click" , () => {
 
   if(!tipoDeConsultaVacio && !municipioVacio && !localidadVacio){

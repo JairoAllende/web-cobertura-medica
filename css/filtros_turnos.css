@@ -3,6 +3,7 @@ html, body{
     height: 100dvh;
     display: flex;
     flex-direction: column;
+    background-color: #f0f2f5;
 }
 
 .wrapper {
@@ -216,33 +217,53 @@ input[list] {
     display: none;
 }
 
-#container-secciones-turnos{
+.sidebar {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+    width: 220px;
+    flex-shrink: 0;
+    height: 23dvh;
 }
 
-#seccion-actual{
-    background-color: var(--color-principal);
-    color: var(--color-surface);
+.sidebar nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
-.secciones{
-    width: 60%;
+.sidebar nav ul li {
+    margin-bottom: 15px;
+}
+
+.sidebar nav ul li a {
+    text-decoration: none;
+    color: #444;
+    background-color: #e9ecef;
+    display: block;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-weight: 600;
     text-align: center;
-    padding: 1rem;
-    cursor: pointer;
-    margin-bottom: 1rem;
+    transition: all 0.3s;
 }
 
-.otra-seccion{
-    border: 2px solid var(--color-secundario);
-    color: var(--color-principal);
+.sidebar nav ul li a:hover {
+    background-color: #d6d8db;
 }
 
-.otra-seccion:active{
-    background-color: var(--color-principal);
-    color: var(--color-surface);
+.sidebar nav ul li.active a {
+    background-color: #005792;
+    color: white;
+}
+
+
+.sidebar nav ul li.active a {
+    background-color: #005792;
+    color: white;
 }
 
 footer{
