@@ -5,7 +5,7 @@ boton = document.getElementById("boton");
 
 logoEmpresa.addEventListener("click" , () =>{
     
-    window.open("/html/index.html", "_blank");
+    window.open("/index.html", "_blank");
 })
 
 boton.addEventListener("click" , () => {

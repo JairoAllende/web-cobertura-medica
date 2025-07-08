@@ -106,7 +106,7 @@ main{
     flex-direction: column;
     gap: 1rem;
     padding: 1rem;
-    max-height: 68vh;   
+    max-height: 64vh;   
     overflow-y: auto;   
 }
 
