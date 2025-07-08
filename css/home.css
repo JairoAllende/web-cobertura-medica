@@ -72,6 +72,12 @@ h1{
     color: var(--color-surface);
 }
 
+#log_out{
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+}
+
 #numero-emergencia{
     display: flex;
     justify-content: center;
