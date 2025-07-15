@@ -1,5 +1,5 @@
-botonIniciarSesion = document.getElementById('opciones-iniciar_sesion');
+const botonIniciarSesion = document.getElementById('opciones-iniciar_sesion');
 
-botonIniciarSesion.addEventListener("click", () =>{
+botonIniciarSesion.addEventListener("click", () => {
     window.location.href = "login.html";
 });
