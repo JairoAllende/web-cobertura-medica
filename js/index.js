@@ -2,7 +2,7 @@ botonIniciarSesion = document.getElementById('opciones-iniciar_sesion');
 cardPlan = document.getElementsByClassName('card-plan');
 
 botonIniciarSesion.addEventListener("click", () =>{
-    window.location.href = "/html/login.html";
+    window.location.href = "html/login.html";
 });
 
 Array.from(cardPlan).forEach(element => {
@@ -12,5 +12,5 @@ Array.from(cardPlan).forEach(element => {
 });
 
 document.getElementById("container-socios").addEventListener("click", () => {
-  window.location.href="/html/login.html";
+  window.location.href="html/login.html";
 })
