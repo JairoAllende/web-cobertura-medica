@@ -10,7 +10,7 @@ html, body{
 }
 
 .foto-login{
-    background-image: url(/assets/imagenes/foto-login.jpg);
+    background-image: url(../assets/imagenes/foto-login.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -120,15 +120,15 @@ html, body{
 }
 
 .logo-facebook{
-    background-image: url(/assets/imagenes/logo-facebook.png);
+    background-image: url(../assets/imagenes/logo-facebook.png);
 }
 
 .logo-google{
-    background-image: url(/assets/imagenes/logo-google.png);
+    background-image: url(../assets/imagenes/logo-google.png);
 }
 
 .logo-ios{
-    background-image: url(/assets/imagenes/logo-ios.png);
+    background-image: url(../assets/imagenes/logo-ios.png);
 }
 
 #container-crear_cuenta{
