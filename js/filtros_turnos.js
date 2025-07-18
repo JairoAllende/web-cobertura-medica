@@ -1,15 +1,5 @@
-document.getElementById("boton-buscar").addEventListener("click" , () => {
-
-  if(!tipoDeConsultaVacio && !municipioVacio && !localidadVacio){
-    window.open("turnos.html");
-  }else{
-    alert("Debe completar todos los campos");
-  }
-
-})
-
 document.getElementById("hacia-atras").addEventListener("click", ()=> {
-  window.location.href = "/html/home.html";
+  window.location.href = "home.html";
 })
 
 const inputFecha = document.getElementById('fecha');
@@ -83,3 +73,12 @@ LOCALIDAD.addEventListener("change", () => {
   }
 })
 
+document.getElementById("boton-buscar").addEventListener("click" , () => {
+
+  if(!tipoDeConsultaVacio && !municipioVacio && !localidadVacio){
+    window.open("turnos.html");
+  }else{
+    alert("Debe completar todos los campos");
+  }
+
+})
