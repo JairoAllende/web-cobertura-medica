@@ -1,7 +1,7 @@
 document.getElementById("boton-buscar").addEventListener("click" , () => {
 
   if(!tipoDeConsultaVacio && !municipioVacio && !localidadVacio){
-    window.open("/html/turnos.html");
+    window.open("turnos.html");
   }else{
     alert("Debe completar todos los campos");
   }
