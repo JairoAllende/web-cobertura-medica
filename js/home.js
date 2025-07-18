@@ -1,3 +1,7 @@
+document.getElementById("marca").addEventListener("click", () =>{
+    window.location.href = "/index.html";
+})
+
 document.getElementById("home-pedir_turno").addEventListener("click", () => {
     window.location.href = "filtros_turnos.html";
 });
