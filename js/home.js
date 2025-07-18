@@ -1,5 +1,5 @@
 document.getElementById("marca").addEventListener("click", () => {
-    window.location.href = "/index.html";
+    window.location.href = "../index.html";
 });
 
 document.getElementById("home-pedir_turno").addEventListener("click", () => {
