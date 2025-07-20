@@ -54,7 +54,7 @@ h1{
     justify-content: center;
     cursor: pointer;
     gap: 0.2rem;
-    width: 100%;
+    
 }
 
 #opciones-iniciar_sesion{
@@ -420,9 +420,22 @@ footer{
     font-size: 1rem;
   }
 
-  #form-informacion-plan,
-  #quiero_plan {
+  #container-quiero_plan{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+
+  #quiero_plan{
+    display: flex;
+    justify-content: center;
+  }
+
+  #form-informacion-plan{
     width: 90%;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
   }
 
   #formulario {
@@ -437,8 +450,13 @@ footer{
 
   #container-logo-redes {
     width: 100%;
+    flex-direction: column;
     justify-content: center;
     gap: 1rem;
+  }
+
+  #footer-redes{
+    flex-direction: row;
   }
 
   #container-enlaces {
@@ -448,15 +466,25 @@ footer{
   }
 
   .enlaces {
-    width: 100%;
+    width: 50%;
     border-left: none;
     border-bottom: 1px solid var(--color-secundario);
     padding-bottom: 1rem;
   }
 
   #container-nov {
-    width: 90%;
+    width: 50%;
     margin: 2rem auto;
+  }
+
+  form{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .form-campo{
+    align-self: center;
   }
 }
 

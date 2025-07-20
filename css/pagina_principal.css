@@ -437,6 +437,7 @@ footer{
 }
 
 @media ((max-width:1669px)){
+    
     .card-plan{
         width: 24%;
     }
