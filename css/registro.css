@@ -46,6 +46,7 @@ body {
   color: var(--color-principal);
 }
 
+
 #logo-marca{
     width: 5rem;
     cursor: pointer;
@@ -79,8 +80,14 @@ body {
   transition: 0.3s;
 }
 
-/* Tablet: menos de 992px */
-@media (max-width: 991.98px) {
+@media (max-width: 1625px) {
+  h1{
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 992px) {
+  
   .imagen-registro {
     display: none;
   }
