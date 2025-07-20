@@ -21,6 +21,7 @@ header{
 #marca{
     display: flex;
     align-items: center;
+    justify-content: center;
     margin-left: 1rem;
     color: var(--color-surface);
 }
@@ -38,9 +39,10 @@ h1{
     color: var(--color-surface);
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    width: 25%;
+    justify-content: space-around;
+    width: 30%;
     margin-right: 1rem;
+    gap: 1rem;
 }
 
 .opciones{
@@ -48,7 +50,7 @@ h1{
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    gap: 0.2rem;
+    text-align: center;
 }
 
 #opciones-iniciar_sesion{
@@ -169,6 +171,7 @@ main {
     align-items: center;
     gap: 2rem;
     margin-top: 4rem;
+    text-align: center;
 }
 
 #container-cards-planes{
@@ -293,6 +296,7 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     text-align: center;
     gap: 1rem;
     padding: 1rem 1.5rem;
@@ -447,6 +451,7 @@ footer{
   #container-cards-planes {
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     height: auto;
   }
 
@@ -507,6 +512,10 @@ footer{
     gap: 1rem;
   }
 
+  #numero-emergencia{
+    flex-direction: column;
+  }
+
   .container-informacion_principal {
     grid-template-columns: 1fr;
     height: auto;
@@ -565,9 +574,13 @@ footer{
 
   #container-nov form {
     width: 100%;
+    align-items: center;
   }
 
   .form-campo {
-    width: 100%;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+
   }
 }
