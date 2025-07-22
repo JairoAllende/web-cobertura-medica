@@ -91,7 +91,7 @@ main{
 }
 
 #smartcard{
-    width: 35%;
+    min-width: 35%;
     height: 60%;
     display: flex;
     flex-direction: column;
@@ -135,6 +135,7 @@ main{
     display: flex;
     justify-content: space-between;
     width: 80%;
+    gap: 2rem;
 }
 
 footer{
@@ -151,4 +152,66 @@ footer{
     width: 4rem;
     height: 4rem;
     cursor: pointer;
+}
+
+/* Móvil: menos de 768px */
+@media (max-width: 767.98px) {
+  #smartcard {
+    flex-direction: column;
+    width: 95vw;
+    min-width: unset;
+    height: auto;
+    padding: 1rem 0.2rem;
+    border-radius: 12px;
+    margin: 3rem;
+  }
+  #container-foto-datos {
+    flex-direction: column;
+    align-items: center;
+    padding: 0.5rem;
+    width: 100%;
+  }
+  #smartcard-foto {
+    width: 6rem;
+    height: 6rem;
+    margin-bottom: 1rem;
+  }
+  #datos-personales {
+    padding-left: 0;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+  }
+  #container-fecha {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+  }
+}
+
+/* Extra pequeño: menos de 480px */
+@media (max-width: 480px) {
+    #mi-perfil-usuario{
+        justify-content: center;
+        align-items: center;
+        font-size: 0.2rem;
+    }
+
+    #numero-emergencia{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #smartcard {
+    width: 100vw;
+    padding: 0.5rem 0.1rem;
+  }
+  #smartcard-foto {
+    width: 4rem;
+    height: 4rem;
+  }
+  h1, h2, h3, h4 {
+    font-size: 1rem;
+  }
 }
